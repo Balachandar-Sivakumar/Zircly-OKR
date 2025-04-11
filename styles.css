@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: linear-gradient(135deg, black,blue,white);
+    display: flex;
+    color: white;
+    padding: 1rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+li{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background: lightblue;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navigate{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 3px 5px 10px black;
+    border-radius: 8px;
+}
+
+.navigate li{
+    padding: .7rem;
+    border: 1px lightblue solid;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trace{
+    width: 200px;
+    height: 5px;
+    position: relative;
+    overflow: hidden;
+    background: lightgray;
+}
+
+.trace::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+   transition: .5s ease;
+    height: 100%;
+    background-color: rgb(45, 45, 184);
+}
+
+.base::after{
+    width: 100%;
+}
+
+.tracking_background{
+    background-color: rgb(43, 43, 184);
+    color: white;
+}
+
+label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+select{
+    display: block;
+}
+
+form{
+    background-color: white;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+input,select{
+    margin: .5rem 0;
+    padding: .7rem .5rem;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid lightblue;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+button{
+    width: 100%;
+    padding: .5rem;
+    background-color: green;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.forms{
+    display: none;
+}
+
+h2{
+    padding-bottom: 1rem;
+}
+
+.final{
+    display: flex;
+    gap: 1rem;
+}
+
+.next_previous{
+    display: flex;
+    width: 100%;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.next_btn,.back_btn{
+    width: 100px;
+    margin: 0;
+}
+
+.set_green{
+    background-color: rgb(123, 175, 123);
+}
+
+option {
+    background: white;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .block{
+    display: none;
+  }
+
+.pop_up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.5);
+   visibility: hidden;
+   flex-direction: column;
+}
+
+table{
+    background: white;
+    border-collapse: collapse;
+    font-size: 1.3rem;
+    width: 50%;
+}
+td{
+    border: 2px solid black;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+thead{
+    font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+tr:hover{
+    background-color: #eef;
+    transition: .3s ease;
+}
+
+.close_button{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+

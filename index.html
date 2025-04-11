@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+     src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Zircly okr</h1>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="next_previous">
+            <button class="back_btn">back</button>
+            <button class="next_btn set_green">Next >></button>
+        </div>
+        <div class="navigate">
+            <li class="tracker">1</li>
+            <div class="trace"></div>
+            <li class="tracker">2</li>
+            <div class="trace"></div>
+            <li class="tracker">3</li>
+        </div>
+
+        <form action="#" class="forms" id="persnol_detail">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="valid">
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="valid">
+          
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="100" class="valid">
+          
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" class="valid">
+              <option disabled selected>Select</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+              <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+
+          </form>
+
+          <form action="#" class=" forms" id="education">
+            <h2>Education Details</h2>
+          
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" placeholder="e.g. Bachelor's, Master's" class="valid">
+          
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" placeholder="University/College name" class="valid">
+          
+            <label for="field">Field of Study:</label>
+            <input type="text" id="field" name="field" placeholder="e.g. Computer Science" class="valid">
+          
+          </form>
+
+          <form action="#" method="post" class="forms" id="kyc_details">
+            <h2>KYC Details</h2>
+          
+            <label for="aadhar">Aadhaar Number:</label>
+            <input type="text" id="aadhar" name="aadhar" maxlength="12" placeholder="Enter 12-digit Aadhaar" class="valid">
+          
+            <label for="pan">PAN Card Number:</label>
+            <input type="text" id="pan" name="pan" maxlength="10" placeholder="ABCDE1234F" class="valid">
+        
+          </form>
+          
+          <div class="final">
+            <button class="third_pg Preview">Preview</button>
+            <button class="third_pg Submit">Submit</button>
+          </div>
+          
+          <div class="pop_up">
+            <table>
+              <thead>
+                <tr>
+                  <td>Question</td>
+                  <td>Answer</td>
+                </tr>
+              </thead>
+              <tbody>
+                  
+              </tbody>
+            </table>
+            <button class="close_button">Close</button>
+          </div>
+
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html>
